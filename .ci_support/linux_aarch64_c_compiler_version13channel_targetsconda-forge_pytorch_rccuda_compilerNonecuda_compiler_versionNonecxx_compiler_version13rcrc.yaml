@@ -13,11 +13,11 @@ cdt_name:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge pytorch_rc
 cuda_compiler:
-- cuda-nvcc
+- None
 cuda_compiler_version:
-- '12.6'
+- None
 cudnn:
 - '9'
 cxx_compiler:
@@ -63,9 +63,9 @@ python:
 pytorch:
 - '2.4'
 rc:
-- None
+- rc
 target_platform:
-- linux-64
+- linux-aarch64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
