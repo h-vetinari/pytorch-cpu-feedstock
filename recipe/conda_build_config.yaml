@@ -20,8 +20,12 @@ blas_impl:
   # deprioritized on windows, would be nice to have
   - generic                     # [unix]
 
+# GPU builds need GPU agents for testing, but since that's a very rare resource,
+# we want to build CPU builds on CPU agents at least
 # https://github.com/conda-forge/.cirun
 github_actions_labels:          # [linux or win]
+- cirun-openstack-cpu-2xlarge   # [linux]
+- cirun-openstack-gpu-2xlarge   # [linux]
 - cirun-openstack-gpu-2xlarge   # [linux]
 - cirun-azure-windows-2xlarge   # [win]
 
