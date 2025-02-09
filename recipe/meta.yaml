@@ -480,7 +480,7 @@ outputs:
         - export OMP_NUM_THREADS=2  # [unix]
         # reduced paralellism to avoid OOM; test only one python version on aarch because emulation is super-slow
         # disable hypothesis because it randomly yields health check errors
-        - python -m pytest -n 2 {{ tests }} -k "not ({{ skips }})" -m "not hypothesis" --durations=50   # [unix and (not aarch64 or py==312)]
+        - python -m pytest -n 2 -v {{ tests }} -k "not ({{ skips }})" -m "not hypothesis" --durations=50   # [unix and (not aarch64 or py==312)]
         - python -m pytest -v -s {{ tests }} -k "not ({{ skips }})" -m "not hypothesis" --durations=50  # [win]
 
         # regression test for https://github.com/conda-forge/pytorch-cpu-feedstock/issues/329, where we picked up
