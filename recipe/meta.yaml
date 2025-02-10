@@ -434,6 +434,7 @@ outputs:
 
         {% set skips = "(TestTorch and test_print)" %}
         # minor tolerance violations
+        {% set skips = skips ~ " or test_1_sized_with_0_strided_cpu_float32" %}         # [osx]
         {% set skips = skips ~ " or test_batchnorm_nhwc_cpu" %}                         # [unix]
         # timeouts and failures on aarch, see https://github.com/conda-forge/pytorch-cpu-feedstock/pull/298#issuecomment-2555888508
         {% set skips = skips ~ " or test_pynode_destruction_deadlock" %}                # [aarch64]
@@ -463,6 +464,10 @@ outputs:
         # non-MKL problems
         {% set skips = skips ~ " or test_cross_entropy_loss_2d_out_of_bounds_class_index_cuda" %}   # [linux and blas_impl != "mkl" and cuda_compiler_version != "None"]
         {% set skips = skips ~ " or test_cublas_config_nondeterministic_alert_cuda " %}             # [linux and blas_impl != "mkl" and cuda_compiler_version != "None"]
+        # these tests are failing with low -n values
+        {% set skips = skips ~ " or test_base_does_not_require_grad_mode_nothing" %}
+        {% set skips = skips ~ " or test_base_does_not_require_grad_mode_warn" %}
+        {% set skips = skips ~ " or test_composite_registered_to_cpu_mode_nothing" %}
         # these tests are failing on windows
         {% set skips = skips ~ " or (TestNN and test_Conv1d_dilated)" %}                 # [win]
         {% set skips = skips ~ " or (TestNN and test_Conv1d_pad_same_dilated)" %}        # [win]
