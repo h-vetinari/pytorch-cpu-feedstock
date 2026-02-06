@@ -68,6 +68,8 @@ build:
 {% else %}
   skip: true  # [is_rc]
 {% endif %}
+  # DEBUG
+  skip: true  # [not (win or blas_impl == "generic")]
   # CUDA builds on GPU agents, non-CUDA builds on CPU agents; c.f.
   # https://github.com/conda-forge/conda-smithy/pull/2434; the skip could be avoided
   # using https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/6910
