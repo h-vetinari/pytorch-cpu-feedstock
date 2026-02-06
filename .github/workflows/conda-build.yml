@@ -25,71 +25,71 @@ jobs:
             SHORT_CONFIG: linux_64_blas_implgenericc_stdlib_versio_hce9cc16f
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04', 'linux', 'x64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
             CONDA_FORGE_DOCKER_RUN_ARGS: "--gpus all"
           - CONFIG: linux_64_blas_implgenericc_stdlib_version2.17channel_targetsconda-forge_maincuda_compiler_version12.9github_actions_labelsghcr.iocirruslabsubuntu-runner-amd6424.04is_rcFalse
             SHORT_CONFIG: linux_64_blas_implgenericc_stdlib_versio_h618fed0d
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04', 'linux', 'x64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
           - CONFIG: linux_64_blas_implgenericc_stdlib_version2.17channel_targetsconda-forge_maincuda_compiler_versionNonegithub_actions_labelsghcr.iocirruslabsubuntu-runner-amd6424.04is_rcFalse
             SHORT_CONFIG: linux_64_blas_implgenericc_stdlib_versio_hf0f7a5de
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04', 'linux', 'x64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
           - CONFIG: linux_64_blas_implgenericc_stdlib_version2.28channel_targetsconda-forge_maincuda_compiler_version13.0github_actions_labelsghcr.iocirruslabsubuntu-runner-amd64-gpu24.04is_rcFalse
             SHORT_CONFIG: linux_64_blas_implgenericc_stdlib_versio_hb926ddbd
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04', 'linux', 'x64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
             CONDA_FORGE_DOCKER_RUN_ARGS: "--gpus all"
           - CONFIG: linux_64_blas_implgenericc_stdlib_version2.28channel_targetsconda-forge_maincuda_compiler_version13.0github_actions_labelsghcr.iocirruslabsubuntu-runner-amd6424.04is_rcFalse
             SHORT_CONFIG: linux_64_blas_implgenericc_stdlib_versio_h00340d35
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04', 'linux', 'x64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
           - CONFIG: linux_aarch64_c_stdlib_version2.17channel_targetsconda-forge_maincuda_compiler_version12.9github_actions_labelsghcr.iocirruslabsubuntu-runner-amd64-gpu24.04is_rcFalse
             SHORT_CONFIG: linux_aarch64_c_stdlib_version2.17channe_h43a10562
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04', 'linux', 'ARM64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
             CONDA_FORGE_DOCKER_RUN_ARGS: "--gpus all"
           - CONFIG: linux_aarch64_c_stdlib_version2.17channel_targetsconda-forge_maincuda_compiler_version12.9github_actions_labelsghcr.iocirruslabsubuntu-runner-arm6424.04is_rcFalse
             SHORT_CONFIG: linux_aarch64_c_stdlib_version2.17channe_ha64f5472
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04', 'linux', 'ARM64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
           - CONFIG: linux_aarch64_c_stdlib_version2.17channel_targetsconda-forge_maincuda_compiler_versionNonegithub_actions_labelsghcr.iocirruslabsubuntu-runner-arm6424.04is_rcFalse
             SHORT_CONFIG: linux_aarch64_c_stdlib_version2.17channe_hc8db9a56
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04', 'linux', 'ARM64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
           - CONFIG: linux_aarch64_c_stdlib_version2.28channel_targetsconda-forge_maincuda_compiler_version13.0github_actions_labelsghcr.iocirruslabsubuntu-runner-amd64-gpu24.04is_rcFalse
             SHORT_CONFIG: linux_aarch64_c_stdlib_version2.28channe_hacd2e9d3
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04', 'linux', 'ARM64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-amd64-gpu:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
             CONDA_FORGE_DOCKER_RUN_ARGS: "--gpus all"
           - CONFIG: linux_aarch64_c_stdlib_version2.28channel_targetsconda-forge_maincuda_compiler_version13.0github_actions_labelsghcr.iocirruslabsubuntu-runner-arm6424.04is_rcFalse
             SHORT_CONFIG: linux_aarch64_c_stdlib_version2.28channe_h6ffc57aa
             UPLOAD_PACKAGES: True
             os: ubuntu
-            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04', 'linux', 'ARM64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/ubuntu-runner-arm64:24.04']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
           - CONFIG: osx_arm64_channel_targetsconda-forge_mainis_rcFalse
             SHORT_CONFIG: osx_arm64_channel_targetsconda-forge_mai_h5f57e26b
             UPLOAD_PACKAGES: True
             os: macos
-            runs_on: ['ghcr.io/cirruslabs/macos-runner:tahoe', 'macOS', 'arm64', 'self-hosted']
+            runs_on: ['ghcr.io/cirruslabs/macos-runner:tahoe']
     steps:
 
     - name: Checkout code
